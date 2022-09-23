@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/helpers.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Calculateur</title>
+</head>
+<body>
+    <h1 class="tilte">Le calculateur de coût de revient</h1>
+    <form>
+        <label for="Nom">Nom du produit</label>
+        <input type="text" name="Nom" id="Nom">
+        <label for="prix_au_kg">Prix au kg</label>
+        <input type="number" name="prix_au_kg" id="prix_au_kg" required>
+        <label for="poids">Quantité en gramme</label>
+        <input type="number" name="poids" id="poids" required>
+        <input type="submit" value="Calculer" id="calculer">
+    </form>
+    <div id="content"></div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
