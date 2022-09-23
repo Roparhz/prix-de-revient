@@ -6,21 +6,27 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/helpers.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Calculateur</title>
+
 </head>
 <body>
-    <h1 class="tilte">Le calculateur de coût de revient</h1>
-    <form>
-        <label for="Nom">Nom du produit</label>
-        <input type="text" name="Nom" id="Nom">
-        <label for="prix_au_kg">Prix au kg</label>
-        <input type="number" name="prix_au_kg" id="prix_au_kg" required>
-        <label for="poids">Quantité en gramme</label>
-        <input type="number" name="poids" id="poids" required>
-        <input type="submit" value="Calculer" id="calculer">
-    </form>
-    <div id="content"></div>
-    
+    <img src="img/Logo CALM.png" alt="logo CALM" class="image rounded mx-auto d-block">
+    <h1 class="tilte text-center mt-5">Le calculateur de coût de revient</h1>
+     <div class="container mt-5">
+        <form id="form">
+            <div class="mb-3">
+                <label for="Nom" class="form-label fs-4">Nom du produit</label>
+                <input type="text" name="Nom" id="Nom" class="form-control">
+                <label for="prix_au_kg" class="form-label fs-4">Prix au kg</label>
+                <input type="number" name="prix_au_kg" id="prix_au_kg" class="form-control" required>
+                <label for="poids" class="form-label fs-4">Quantité en gramme</label>
+                <input type="number" name="poids" id="poids" class="form-control" required>
+            </div>
+            <input type="submit" value="Calculer" id="calculer" class="btn btn-primary">
+        </form>
+        <div id="content" class="container mt-5 text-center fs-1"></div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
